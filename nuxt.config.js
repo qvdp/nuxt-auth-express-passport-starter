@@ -1,5 +1,5 @@
 module.exports = {
-  mode: "universal",
+  ssr: false,
   /*
    ** Headers of the page
    */
@@ -41,7 +41,7 @@ module.exports = {
   /*
    ** Nuxt.js modules
    */
-  modules: ["@nuxtjs/axios", "@nuxtjs/auth"],
+  modules: ["@nuxtjs/axios", "@nuxtjs/auth-next"],
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
