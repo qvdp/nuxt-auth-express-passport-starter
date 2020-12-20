@@ -26,12 +26,8 @@ module.exports = new Strategy(
       if (userRecord.password !== password) {
         throw new Error("E_WRONG_PASSWORD");
       }
-
-      // Generate JWT with userRecord as payload
-      // const token = issueToken(userRecord.toObject())
-
-      // Generate a session + user agent parsed
-      return done(null, "abcdef");
+      const token = "abcdef";
+      return done(null, token);
     } catch (err) {
       return done(err, undefined);
     }
