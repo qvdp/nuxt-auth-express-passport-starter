@@ -69,6 +69,8 @@
 import Logo from "~/components/Logo.vue";
 
 export default {
+  name: "Entrance",
+  auth: false,
   components: {
     Logo,
   },
